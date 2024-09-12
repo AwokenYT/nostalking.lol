@@ -5,6 +5,11 @@
     "image": "/cdn/subway-surfers/img/icon.png"
   },
   {
+    "name": "Craft Mine",
+    "target": "/cdn/craft-mine/index.html",
+    "image": "/cdn/craft-mine/images/logo.jpeg"
+  },
+  {
     "name": "Monkey Mart",
     "target": "/cdn/monkey-mart/index.html",
     "image": "/cdn/monkey-mart/img/icon.png"
