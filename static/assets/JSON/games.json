@@ -3,5 +3,15 @@
     "name": "Subway Surfers",
     "target": "/cdn/subway-surfers/index.html",
     "image": "/cdn/subway-surfers/img/icon.png"
+  },
+  {
+    "name": "Monkey Mart",
+    "target": "/cdn/monkey-mart/index.html",
+    "image": "/cdn/monkey-mart/img/icon.png"
+  },
+  {
+    "name": "Basketball Stars",
+    "target": "/cdn/basketball-stars/index.html",
+    "image": "/cdn/basketball-stars/img/icon.jpg"
   }
 ]
