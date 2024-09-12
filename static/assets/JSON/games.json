@@ -12,6 +12,11 @@
   {
     "name": "Basketball Stars",
     "target": "/cdn/basketball-stars/index.html",
-    "image": "/cdn/basketball-stars/img/icon.jpg"
+    "image": "/cdn/basketball-stars/images/basketball-stars.png"
+  },
+  {
+    "name": "Mini DayZ",
+    "target": "/cdn/mini-dayz/index.html",
+    "image": "/cdn/mini-dayz/img/icon.jgp"
   }
 ]
