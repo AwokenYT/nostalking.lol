@@ -10,7 +10,7 @@ self.__uv$config = {
 };
 
 /**
- * The storage interface for polaris
+ * The storage interface for nostalking
  * @param {string} containerName 
  *
 const storage = (containerName) => {

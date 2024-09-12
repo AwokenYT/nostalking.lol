@@ -1,4 +1,4 @@
-import { createViewPage, isValidURL, PolarisError } from './utils.js';
+import { createViewPage, isValidURL, nostalkingError } from './utils.js';
 import effects from './effects.js';
 
 const load = () => fetch('/api/cheats')
@@ -40,7 +40,7 @@ const load = () => fetch('/api/cheats')
                 });
             }, 1000);
         });
-    })).catch(e => new PolarisError('Failed to load cheats.'));
+    })).catch(e => new nostalkingError('Failed to load cheats.'));
 
 export default {
     load

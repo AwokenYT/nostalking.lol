@@ -1,4 +1,4 @@
-class PolarisError {
+class nostalkingError {
     constructor(e) {
         let notificationContainer = document.querySelector('.notifications');
 
@@ -42,10 +42,10 @@ class PolarisError {
 }
 
 if (this) {
-    window.onerror = (...e) => new PolarisError(e);
-    window.console.error = (...e) => new PolarisError(e);
-    window.onmessageerror = (...e) => new PolarisError(e);
+    window.onerror = (...e) => new nostalkingError(e);
+    window.console.error = (...e) => new nostalkingError(e);
+    window.onmessageerror = (...e) => new nostalkingError(e);
 }
 
-export default PolarisError;
-export { PolarisError };
+export default nostalkingError;
+export { nostalkingError };

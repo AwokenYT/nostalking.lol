@@ -1,4 +1,4 @@
-import { createViewPage, isValidURL, getVH, CrossTabCommunication, PolarisError, storage } from './utils.js';
+import { createViewPage, isValidURL, getVH, CrossTabCommunication, nostalkingError, storage } from './utils.js';
 import { loadSettings, loadSidebarInterface } from './settings.js';
 import loadEasterEggs from './eastereggs.js';
 import loadAnalytics from './analytics.js';
@@ -151,8 +151,8 @@ if (location.pathname === '/') {
                 }, 1000);
             });
 
-            document.querySelector('.featured').src = '/assets/img/wide/stickman-archero-fight.png';
-        }).catch(e => new PolarisError('Failed to load featured game.'));
+            document.querySelector('.featured').src = '/assets/img/wide/subwaysurfers.webp';
+        }).catch(e => new nostalkingError('Failed to load featured game.'));
 
     const logHeight = () => {
         const log = document.createElement('div');

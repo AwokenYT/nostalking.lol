@@ -2,7 +2,7 @@ import useConfig from './lib/config.js';
 
 export default useConfig({
     port: 8080,
-    mode: 'prod',
+    mode: 'dev',
     options: {
         //Messes up uv
         minify: false,

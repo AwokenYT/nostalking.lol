@@ -1,6 +1,6 @@
 /*
-Modified version of Polarisation's indexeddb importer and exporter library.
-https://github.com/Polarisation/indexeddb-export-import 
+Modified version of nostalkingation's indexeddb importer and exporter library.
+https://github.com/nostalkingation/indexeddb-export-import 
 */
 
 /**

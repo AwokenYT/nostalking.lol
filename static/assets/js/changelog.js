@@ -1,4 +1,4 @@
-import { PolarisError } from './utils.js';
+import { nostalkingError } from './utils.js';
 
 fetch('/api/changelog')
     .then(res => res.json())
@@ -24,4 +24,4 @@ fetch('/api/changelog')
                 log.appendChild(description);
             });
     })
-    .catch(() => new PolarisError('Failed to load changelog'));
+    .catch(() => new nostalkingError('Failed to load changelog'));

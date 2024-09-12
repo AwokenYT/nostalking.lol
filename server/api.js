@@ -1,4 +1,4 @@
-import config from '../polaris.config.js';
+import config from '../nostalking.config.js';
 
 import childProcess from 'node:child_process';
 import path from 'node:path';
@@ -7,7 +7,7 @@ import fs from 'node:fs';
 
 const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
 const packageFile = JSON.parse(fs.readFileSync(path.join(__dirname, '../package.json')));
-const commits = await (await fetch(`https://api.github.com/repos/Skoolgq/Polaris/commits`)).json();
+const commits = await (await fetch(`https://api.github.com/repos/AwokenYT/nostalking.lol/commits`)).json();
 var gitSupported = true;
 
 /**

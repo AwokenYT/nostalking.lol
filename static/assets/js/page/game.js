@@ -1,4 +1,4 @@
-import PolarisError from '/assets/js/error.js';
+import nostalkingError from '/assets/js/error.js';
 import { loadProxyWorker } from '/assets/js/utils.js';
 
 const tiltEffectSettings = {
@@ -22,7 +22,7 @@ const load = () => {
             const searchInput = document.getElementById('searchInput');
             searchInput.addEventListener('input', filterGames);
         })
-        .catch(e => new PolarisError('Failed to load games'));
+        .catch(e => new nostalkingError('Failed to load games'));
 };
 
 function filterGames() {

@@ -10,7 +10,7 @@ import mime from 'mime';
 import cors from 'cors';
 
 import { pathToFile, TokenManager, rewriter } from './utils.js';
-import config from '../polaris.config.js';
+import config from '../nostalking.config.js';
 import api from './api.js';
 
 import childProcess from 'node:child_process';
@@ -37,8 +37,7 @@ api(app);
 app.get('/cdn/*', cors({
     origin: false
 }), async (req, res, next) => {
-    const reqTarget = req.path.startsWith('/cdn/3kh0/') ? `https://player.work/${req.path.replace('/cdn/3kh0/', '')}` : `https://raw.githubusercontent.com/Skoolgq/Polaris-Assets/main/${req.path.replace('/cdn/', '')}`;
-
+    const reqTarget = req.path.startsWith('/cdn/3kh0/') ? `https://player.work/${req.path.replace('/cdn/3kh0/', '')}` : `https://raw.githubusercontent.com/AwokenYT/gamestorage/main/${req.path.replace('/cdn/', '')}`;
     try {
         const asset = await fetch(reqTarget);
 
@@ -163,4 +162,4 @@ server.on('upgrade', (req, socket, head) => {
     else socket.end();
 });
 
-server.listen(config.port, () => console.log(`Polaris running\n\nPort: ${server.address().port}\nVersion: ${packageFile.version + (Number(packageFile.version.split('.')[0]) <= 1 ? ' Beta' : '') || 'Unknown'} ${childProcess.execSync('git rev-parse HEAD').toString().trim().slice(0, 7) || 'Unknown'}\nMode: ${config.mode === 'dev' ? 'development' : 'production'}\nAPI Server: ${config.options.api.domain}\nNode.js: ${process.version}`));
+server.listen(config.port, () => console.log(`nostalking running\n\nPort: ${server.address().port}\nVersion: ${packageFile.version + (Number(packageFile.version.split('.')[0]) <= 1 ? ' Beta' : '') || 'Unknown'} ${childProcess.execSync('git rev-parse HEAD').toString().trim().slice(0, 7) || 'Unknown'}\nMode: ${config.mode === 'dev' ? 'development' : 'production'}\nAPI Server: ${config.options.api.domain}\nNode.js: ${process.version}`));

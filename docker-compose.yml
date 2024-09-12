@@ -1,7 +1,7 @@
-name: Polaris
+name: nostalking
 
 services:
-  polaris:
+  nostalking:
     build: .
     ports:
       - "8080:8080"

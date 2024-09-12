@@ -1,4 +1,4 @@
-import { createViewPage, isValidURL, PolarisError, storage } from './utils.js';
+import { createViewPage, isValidURL, nostalkingError, storage } from './utils.js';
 import effects from './effects.js';
 
 const settingsStorage = storage('settings');
@@ -174,7 +174,7 @@ const load = () => {
                 });
             });
         })
-        .catch(e => new PolarisError('Failed to load games'));
+        .catch(e => new nostalkingError('Failed to load games'));
 
     document.querySelector('#randomGame').addEventListener('click', () => {
         const games = document.querySelectorAll('.games>.game');
@@ -192,7 +192,7 @@ const loadGameFromURL = () => {
     const gameName = urlParams.get('game');
 
     if (!gameName) {
-        throw new PolarisError('No game specified in the URL');
+        throw new nostalkingError('No game specified in the URL');
     }
 
     fetch('/assets/JSON/games.json')
@@ -201,12 +201,12 @@ const loadGameFromURL = () => {
             const game = data.find(g => g.name === decodeURIComponent(gameName));
 
             if (!game) {
-                throw new PolarisError(`Game "${gameName}" not found`);
+                throw new nostalkingError(`Game "${gameName}" not found`);
             }
 
             renderGames([game]);
         })
-        .catch(e => new PolarisError('Failed to load game'));
+        .catch(e => new nostalkingError('Failed to load game'));
 };
 
 export default {

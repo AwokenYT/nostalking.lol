@@ -1,6 +1,6 @@
 import Dexie from 'https://esm.sh/dexie@latest/dist/modern/dexie.mjs';
 
-import { isScrollable, storage, indexedDBExporter, cookie, EventEmitter, PolarisError } from './utils.js';
+import { isScrollable, storage, indexedDBExporter, cookie, EventEmitter, nostalkingError } from './utils.js';
 import Theme from './themes.js';
 
 const settingsStorage = storage('settings');
@@ -96,11 +96,11 @@ const loadSidebarInterface = () => {
                 exportsFinished += 1;
 
                 if (exportsFinished === 3) {
-                    const blobURL = URL.createObjectURL(new Blob([CryptoJS.AES.encrypt(JSON.stringify(saveData), 'polaris')]));
+                    const blobURL = URL.createObjectURL(new Blob([CryptoJS.AES.encrypt(JSON.stringify(saveData), 'nostalking')]));
 
                     const download = document.createElement('a');
                     download.href = blobURL;
-                    download.download = `${new Date().getMonth() + 1}-${new Date().getDate()}-${new Date().getFullYear()}.polarissave`;
+                    download.download = `${new Date().getMonth() + 1}-${new Date().getDate()}-${new Date().getFullYear()}.nostalkingsave`;
                     document.body.appendChild(download);
 
                     download.click();
@@ -164,7 +164,7 @@ const loadSidebarInterface = () => {
             const uploadInput = document.createElement('input');
             uploadInput.type = 'file';
             uploadInput.style.display = 'none';
-            uploadInput.accept = '.polarissave';
+            uploadInput.accept = '.nostalkingsave';
             document.body.appendChild(uploadInput);
 
             uploadInput.click();
@@ -188,7 +188,7 @@ const loadSidebarInterface = () => {
                         /**
                          * @type {{ indexedDB: Array<{name: string, data: any}>, cookies: Array<{name: string, data: any}>, localStorage: Array<{name: string, data: any}> }}
                          */
-                        const saveData = JSON.parse(CryptoJS.AES.decrypt(e.target.result, 'polaris').toString(CryptoJS.enc.Utf8));
+                        const saveData = JSON.parse(CryptoJS.AES.decrypt(e.target.result, 'nostalking').toString(CryptoJS.enc.Utf8));
 
                         const importData = () => {
                             importsFinished += 1;
@@ -223,7 +223,7 @@ const loadSidebarInterface = () => {
                             if (i + 1 === Object.keys(cookie.all()).length) importEvents.emit('cookies');
                         } else importEvents.emit('cookies');
                     } catch {
-                        new PolarisError('Failed to load save file');
+                        new nostalkingError('Failed to load save file');
                     }
                 };
 
@@ -264,7 +264,7 @@ const loadSidebarInterface = () => {
                     document.title = cloaks[document.querySelector('#cloak_select').value].title;
                     document.querySelector('link[rel=\'shortcut icon\']').href = cloaks[document.querySelector('#cloak_select').value].icon;
                     settingsStorage.set('cloak', document.querySelector('#cloak_select').value);
-                } else new PolarisError(`The cloak ${document.querySelector('#cloak_select').value} does not exist`);
+                } else new nostalkingError(`The cloak ${document.querySelector('#cloak_select').value} does not exist`);
 
                 document.querySelector('#custom_cloak').classList.add('hidden');
             }
@@ -345,7 +345,7 @@ const loadSettings = () => {
                 if (cloaks[settingsStorage.get('cloak')]) {
                     document.title = cloaks[settingsStorage.get('cloak')].title;
                     document.querySelector('link[rel=\'shortcut icon\']').href = cloaks[settingsStorage.get('cloak')].icon;
-                } else if (settingsStorage.get('cloak') !== 'none') new PolarisError(`The cloak ${settingsStorage.get('cloak')} does not exist`);
+                } else if (settingsStorage.get('cloak') !== 'none') new nostalkingError(`The cloak ${settingsStorage.get('cloak')} does not exist`);
             });
     }
 

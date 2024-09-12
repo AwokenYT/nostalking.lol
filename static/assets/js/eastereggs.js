@@ -261,7 +261,7 @@ easterEggs.push({
 
 easterEggs.push({
     type: 'keybind',
-    phrase: 'polaris',
+    phrase: 'nostalking',
     run: () => new Promise((resolve, reject) => {
         document.querySelector('.navbar img').style.animation = 'shake 0.5s';
 
@@ -357,7 +357,7 @@ easterEggs.push({
 
                 audio.onended = () => {
                     audioPlaying = false;
-                    title.innerHTML = 'Polaris <span>by Skool</span>';
+                    title.innerHTML = 'nostalking <span>by slurd</span>';
                     logo.src = '/assets/img/logo.png';
 
                     navbarTitle.dataset.action = '';

@@ -1,11 +1,11 @@
 import indexedDBExporter from './utils/indexeddb.js';
 import EventEmitter from './utils/events.js';
-import PolarisError from './utils/error.js';
+import nostalkingError from './utils/error.js';
 import cookie from './utils/cookie.js';
 import ctc from './utils/ctc.js';
 
 /**
- * The storage interface for polaris
+ * The storage interface for nostalking
  * @param {string} containerName 
  */
 export const storage = (containerName) => {
@@ -227,7 +227,7 @@ export default {
     cookie,
     uuid,
     CrossTabCommunication,
-    PolarisError
+    nostalkingError
 };
 
 export {
@@ -235,5 +235,5 @@ export {
     EventEmitter,
     cookie,
     CrossTabCommunication,
-    PolarisError
+    nostalkingError
 };
