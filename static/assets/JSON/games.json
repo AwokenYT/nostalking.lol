@@ -12,16 +12,21 @@
   {
     "name": "Monkey Mart",
     "target": "/cdn/monkey-mart/index.html",
-    "image": "/cdn/monkey-mart/img/icon.png"
+    "image": "/cdn/monkey-mart/icon.png"
   },
   {
     "name": "Basketball Stars",
     "target": "/cdn/basketball-stars/index.html",
-    "image": "/cdn/basketball-stars/assets/icon.jpeg"
+    "image": "/cdn/basketball-stars/assets/images/icon.jpeg"
   },
   {
     "name": "Mini DayZ",
     "target": "/cdn/mini-dayz/index.html",
     "image": "/cdn/mini-dayz/icon-256.png"
+  },
+  {
+    "name": "Super Liquid Soccer",
+    "target": "/cdn/super-liquid-soccer/index.html",
+    "image": "/cdn/super-liquid-soccer/index.512x512.png"
   }
 ]

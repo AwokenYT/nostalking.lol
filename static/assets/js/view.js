@@ -27,7 +27,6 @@ if (params.get('load')) {
         document.querySelector("#loadframe").src = parsedData.target
         if (Boolean(parsedData.target && parsedData.title && parsedData.return)) {
             log('Load data valid, proceeding...');
-
             document.body.classList.remove('hidden');
 
             sessionStorage.setItem('loaddata', JSON.stringify(parsedData));
