@@ -13,14 +13,9 @@ log('Loaded bare.cjs');
 loadSettings();
 
 const params = new URLSearchParams(location.search);
-const settingsStorage = storage('settings');
+const parsedData = JSON.parse(atob(params.get('load')));
 
-log('Initialized settings storage');
-
-if ((settingsStorage.get('proxy') || 'uv').startsWith('uv')) {
-    log(`Proxy setting: ${settingsStorage.get('proxy')}`);
-    await setTransport((settingsStorage.get('proxy') || '').split(':')[1] || 'libcurl');
-}
+log(parsedData.target)
 
 window.history.replaceState({}, '', location.pathname);
 
@@ -29,25 +24,18 @@ log('Replaced history state');
 if (params.get('load')) {
     try {
         const parsedData = JSON.parse(atob(params.get('load')));
-
+        document.querySelector("#loadframe").src = parsedData.target
         if (Boolean(parsedData.target && parsedData.title && parsedData.return)) {
             log('Load data valid, proceeding...');
 
             document.body.classList.remove('hidden');
 
             sessionStorage.setItem('loaddata', JSON.stringify(parsedData));
-
-            if (parsedData.proxied) {
-                log('Proxying enabled');
-                await loadProxyWorker((settingsStorage.get('proxy') || '').split(':')[0] || 'uv');
-                document.querySelector('#loadframe').src = `/${(settingsStorage.get('proxy') || '').split(':')[0] || 'uv'}/service/${encoder['xor'].encode(parsedData.target)}`;
-            } else {
-                log('Proxying disabled, setting target directly');
-                document.querySelector('#loadframe').src = parsedData.target;
-            }
+            log('Setting target directly (fuck proxies)');
+            document.querySelector('#loadframe').src = parsedData.target;
 
             document.querySelector('#loadframe').addEventListener('load', () => {
-                log('Frame loaded');
+                log('Loaded frame');
                 document.querySelector('.title').textContent = parsedData.title;
 
                 document.querySelector('#loadframe').style.transition = 'none';

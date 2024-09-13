@@ -1,5 +1,21 @@
 @import url('/assets/css/themes.css');
-
+#log-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 400px; /* Adjust width as needed */
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    overflow-y: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 1.5;
+    z-index: 1000;
+    border-left: 1px solid #444;
+    border-bottom: 1px solid #444;
+}
 .gamebar {
     background: var(--background-darker);
     z-index: 9;

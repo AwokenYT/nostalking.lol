@@ -37,7 +37,7 @@ api(app);
 app.get('/cdn/*', cors({
     origin: false
 }), async (req, res, next) => {
-    const reqTarget = req.path.startsWith('/cdn/3kh0/') ? `https://player.work/${req.path.replace('/cdn/3kh0/', '')}` : `https://raw.githubusercontent.com/AwokenYT/gamestorage/main/${req.path.replace('/cdn/', '')}`;
+    const reqTarget = req.path.startsWith('/cdn/3kh0/') ? `https://player.work/${req.path.replace('/cdn/3kh0/', '')}` : `https://awokenyt.github.io/gamestorage/${req.path.replace('/cdn/', '')}`;
 
     try {
         const asset = await fetch(reqTarget);
