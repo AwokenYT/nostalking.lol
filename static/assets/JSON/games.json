@@ -52,6 +52,6 @@
   {
     "name": "Temple Run 2",
     "target": "/cdn/temple-run-2/index.html",
-    "image": "/cdn/temple-run-2/img/icon-512x512.png"
+    "image": "/cdn/temple-run-2/img/icons/icon-512x512.png"
   }
 ]
