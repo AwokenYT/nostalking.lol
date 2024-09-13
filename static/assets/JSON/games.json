@@ -2,7 +2,7 @@
   {
     "name": "Subway Surfers",
     "target": "/cdn/subway-surfers/index.html",
-    "image": "/cdn/subway-surfers/assests/images/app-icon-192.png"
+    "image": "/cdn/subway-surfers/assets/images/app-icon-192.png"
   },
   {
     "name": "Craft Mine",
@@ -17,11 +17,11 @@
   {
     "name": "Basketball Stars",
     "target": "/cdn/basketball-stars/index.html",
-    "image": "/cdn/basketball-stars/images/basketball-stars.png"
+    "image": "/cdn/basketball-stars/assets/icon.jpeg"
   },
   {
     "name": "Mini DayZ",
     "target": "/cdn/mini-dayz/index.html",
-    "image": "/cdn/mini-dayz/img/icon.jgp"
+    "image": "/cdn/mini-dayz/icon-256.png"
   }
 ]
