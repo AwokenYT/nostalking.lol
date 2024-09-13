@@ -28,5 +28,25 @@
     "name": "Super Liquid Soccer",
     "target": "/cdn/super-liquid-soccer/index.html",
     "image": "/cdn/super-liquid-soccer/index.512x512.png"
+  },
+  {
+    "name": "Rooftop Snipers",
+    "target": "/cdn/rooftop-snipers/index.html",
+    "image": "/cdn/rooftop-snipers/icon.png"
+  },
+  {
+    "name": "Retro Bowl",
+    "target": "/cdn/retro-bowl/index.html",
+    "image": "/cdn/retro-bowl/img/icon.jpg"
+  },
+  {
+    "name": "Slope",
+    "target": "/cdn/slope/index.html",
+    "image": "/cdn/slope/slope4.jpg"
+  },
+  {
+    "name": "Stickman Hook",
+    "target": "/cdn/stickman-hook/index.html",
+    "image": "/cdn/stickman-hook/images/icon.jpeg"
   }
 ]
