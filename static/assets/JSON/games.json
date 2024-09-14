@@ -55,13 +55,13 @@
     "image": "/cdn/temple-run-2/img/icons/icon-512x512.png"
   },
   {
-    "name": "Minesweeper",
-    "target": "/cdn/minesweeper/index.html",
-    "image": "/cdn/minesweeper/icon.png"
-  },
-  {
     "name": "Gorescript",
     "target": "/cdn/gorescript/play",
     "image": "/cdn/gorescript/img/logo_black.png"
+  },
+  {
+    "name": "Super Mario 64",
+    "target": "/cdn/sm64",
+    "image": "/cdn/sm64/logo.png"
   }
 ]
