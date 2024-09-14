@@ -1,66 +1,79 @@
 [
   {
     "name": "Subway Surfers",
+    "id": "1",
     "target": "/cdn/subway-surfers/index.html",
     "image": "/cdn/subway-surfers/assets/images/app-icon-192.png"
   },
   {
     "name": "Craft Mine",
+    "id": "2",
     "target": "/cdn/craft-mine/index.html",
     "image": "/cdn/craft-mine/images/logo.jpeg"
   },
   {
     "name": "Monkey Mart",
+    "id": "3",
     "target": "/cdn/monkey-mart/index.html",
     "image": "/cdn/monkey-mart/icon.png"
   },
   {
     "name": "Basketball Stars",
+    "id": "4",
     "target": "/cdn/basketball-stars/index.html",
     "image": "/cdn/basketball-stars/assets/images/icon.jpeg"
   },
   {
     "name": "Mini DayZ",
+    "id": "5",
     "target": "/cdn/mini-dayz/index.html",
     "image": "/cdn/mini-dayz/icon-256.png"
   },
   {
     "name": "Super Liquid Soccer",
+    "id": "6",
     "target": "/cdn/super-liquid-soccer/index.html",
     "image": "/cdn/super-liquid-soccer/index.512x512.png"
   },
   {
     "name": "Rooftop Snipers",
+    "id": "7",
     "target": "/cdn/rooftop-snipers/index.html",
     "image": "/cdn/rooftop-snipers/icon.png"
   },
   {
     "name": "Retro Bowl",
+    "id": "8",
     "target": "/cdn/retro-bowl/index.html",
     "image": "/cdn/retro-bowl/img/icon.jpg"
   },
   {
     "name": "Slope",
+    "id": "9",
     "target": "/cdn/slope/index.html",
     "image": "/cdn/slope/slope4.jpeg"
   },
   {
     "name": "Stickman Hook",
+    "id": "10",
     "target": "/cdn/stickman-hook/index.html",
     "image": "/cdn/stickman-hook/images/icon.jpeg"
   },
   {
     "name": "Temple Run 2",
+    "id": "11",
     "target": "/cdn/temple-run-2/index.html",
     "image": "/cdn/temple-run-2/img/icons/icon-512x512.png"
   },
   {
     "name": "Gorescript",
+    "id": "12",
     "target": "/cdn/gorescript/play/index.html",
     "image": "/cdn/gorescript/img/logo_black.png"
   },
   {
     "name": "Super Mario 64",
+    "id": "13",
     "target": "/cdn/sm64/index.html",
     "image": "/cdn/sm64/logo.png"
   }
