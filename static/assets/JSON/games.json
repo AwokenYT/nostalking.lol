@@ -56,12 +56,12 @@
   },
   {
     "name": "Gorescript",
-    "target": "/cdn/gorescript/play",
+    "target": "/cdn/gorescript/play/index.html",
     "image": "/cdn/gorescript/img/logo_black.png"
   },
   {
     "name": "Super Mario 64",
-    "target": "/cdn/sm64",
+    "target": "/cdn/sm64/index.html",
     "image": "/cdn/sm64/logo.png"
   }
 ]
