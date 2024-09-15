@@ -86,7 +86,13 @@
   {
     "name": "Quake",
     "id": "15",
-    "target": "/cdn/quake/index.html",
+    "target": "/cdn/quake/Client/WebQuake.htm",
     "image": "/cdn/quake/jpg.png"
+  },
+  {
+    "name": "Basket Random",
+    "id": "16",
+    "target": "/cdn/basket-random/index.html",
+    "image": "/cdn/basket-random/icon.jpg"
   }
 ]
