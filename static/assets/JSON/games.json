@@ -81,6 +81,12 @@
     "name": "Among Us",
     "id": "14",
     "target": "/cdn/among-us/index.html",
-    "image": "/cdn/among-us/img/logo,png"
+    "image": "/cdn/among-us/img/logo.png"
+  },
+  {
+    "name": "Quake",
+    "id": "15",
+    "target": "/cdn/quake/index.html",
+    "image": "/cdn/quake/jpg.png"
   }
 ]
