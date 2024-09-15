@@ -76,5 +76,11 @@
     "id": "13",
     "target": "/cdn/sm64/index.html",
     "image": "/cdn/sm64/logo.png"
+  },
+  {
+    "name": "Among Us",
+    "id": "14",
+    "target": "/cdn/among-us/index.html",
+    "image": "/cdn/among-us/img/logo,png"
   }
 ]
