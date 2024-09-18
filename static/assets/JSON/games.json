@@ -21,7 +21,7 @@
     "name": "Basketball Stars",
     "id": "4",
     "target": "/cdn/basketball-stars/index.html",
-    "image": "/cdn/basketball-stars/assets/images/logo.png"
+    "image": "/cdn/basketball-stars/assets/images/logo.jpg"
   },
   {
     "name": "Mini DayZ",
@@ -84,15 +84,15 @@
     "image": "/cdn/among-us/img/logo.png"
   },
   {
-    "name": "Quake",
-    "id": "15",
-    "target": "/cdn/quake/Client/WebQuake.htm",
-    "image": "/cdn/quake/jpg.png"
-  },
-  {
     "name": "Basket Random",
     "id": "16",
     "target": "/cdn/basket-random/index.html",
-    "image": "/cdn/basket-random/icon.jpg"
+    "image": "/cdn/basket-random/icon.jpeg"
+  },
+  {
+    "name": "HexGL",
+    "id": "17",
+    "target": "http://hexgl.bkcore.com/play/",
+    "image": "https://raw.githubusercontent.com/BKcore/HexGL/master/icon_256.png"
   }
 ]
