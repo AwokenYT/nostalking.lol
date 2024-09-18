@@ -92,7 +92,7 @@
   {
     "name": "HexGL",
     "id": "17",
-    "target": "http://hexgl.bkcore.com/play/",
+    "target": "/cdn/hexgl/index.html",
     "image": "https://raw.githubusercontent.com/BKcore/HexGL/master/icon_256.png"
   }
 ]
